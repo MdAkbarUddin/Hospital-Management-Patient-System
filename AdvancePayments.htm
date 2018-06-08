@@ -1,0 +1,1163 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Online Payment Gateway</title><br><br>
+                <center><font size="100" color="white" >HOSPITAL MANAGEMENT-PATIENT SYSTEM</font></center><br><br>
+		<meta charset="utf-8">
+		<meta name="pagepath" content="" />
+		<meta name="robots" content="noindex,nofollow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="-1" />
+		<meta http-equiv="x-ua-compatible" content="IE=9" />		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		
+		<link type="image/x-icon" rel="shortcut icon" href="https://staticgw1.paytm.in/1.6/images/web/Paytm.ico" />
+		
+		<script type="text/javascript">
+			function backButtonOverride() {
+				setTimeout("backButtonOverrideBody()", 1);
+			}
+			
+			function backButtonOverrideBody() {
+				try {
+					history.forward();
+				}
+				catch (e) {
+				}
+				setTimeout("backButtonOverrideBody()", 500);
+			}
+			
+			history.forward(0);	
+			
+		</script>
+		<script>
+		var MERCHANT_USER_ID='';
+		</script>
+		<script>
+			var MERCHANT_USER_ID='216810000134297178558';
+			</script>
+		<script>
+				
+				var PG_ANALYTICS={}, RESTART_CHECK_JS=false,URL_RESTART_CHECK='';
+				PG_ANALYTICS.mId='scwpay09224240900570';
+				PG_ANALYTICS.orderId="3019863268";
+				PG_ANALYTICS.logToConsole="false";
+				PG_ANALYTICS.logToServer="true";
+				PG_ANALYTICS.theme="merchant4";
+			</script>
+		<link rel="stylesheet" type="text/css" href="https://staticgw5.paytm.in/1.6/css/web/merchant4/style.min.css" />
+
+		<!--[if lte IE 9 ]>
+			    <script type="text/javascript" src="https://staticgw4.paytm.in/1.6/js/jquery-1.10.1.min.js"></script>
+			<![endif]-->
+			
+			<script type="text/javascript" src="https://staticgw4.paytm.in/1.6/js/web/merchant4/functions.min.js"></script>			
+			<script type="text/javascript" src="https://staticgw5.paytm.in/1.6/js/logger-cookie.js"></script>
+			<script type="text/javascript" src="https://staticgw2.paytm.in/1.6/js/analytic.js"></script>
+			<script>
+			 
+			 window.URL_RESTART_CHECK='https://staticgw2.paytm.in/1.6/js/web/merchant4/functions.min.js';
+			</script>
+			</head>
+
+
+	<body onload="backButtonOverride();">
+		<div class="bgstript"></div>
+		<input type="hidden" id="pgTrackUrlManual" value="" />
+<input type="hidden" id="pgTrackUrlAuto" value="" />
+<div id="queryStringForSession" data-value="MID=scwpay09224240900570&ORDER_ID=3019863268&route="/>
+<div id="jvmRoute" data-value=""/>
+<!-- CURRENCY SIGN SET --> 
+<script>
+document.body.oncopy = function() { return false; }
+document.body.oncut = function() { return false; }
+document.body.onpaste = function() { return false; }
+</script>
+<!-- Configurations -->
+		<div id="auth-config" data-value='{"ORDERID":"3019863268","MSISDN":"","MID":"scwpay09224240900570","return_url":"https://securegw.paytm.in/theia/oauthResponse","EMAIL":"","ADDRESS1":"","oAuthBaseUrl":"https://accounts.paytm.com","client_id":"paytm-pg-client","wap_client_id":"paytm-pg-client-sso","ADDRESS2":""}'></div>
+		
+		<!-- For payment retry purpose --> 
+		<div id="retryPaymentMode" 
+			data-value=''>
+		</div>
+		
+		<div id="wallet-details"
+			data-available="true"
+			data-balance=""
+			data-wallet-only="false"
+			data-wallet-used="false">
+		</div>
+		<div id="payment-details" 
+			data-amount="500.0"
+			data-limeroad="false"
+			data-hybrid-allowed="false"
+			data-cod-hybrid-allowed="false"
+			data-offline-paymode=""
+			data-idebit-ic ="false"
+			></div>
+	
+		<div id="addMoney-details"
+		data-available="false"
+		data-selected="false"></div>
+		<div id="login-details"
+			data-value='true'>
+		</div>
+		<div id="current-payment-type" data-value='5'></div>
+		<div id="error-details"
+		data-available="false"></div>
+		<div id="auth-js-details" 
+		data-mid="scwpay09224240900570"
+		data-orderid="3019863268"
+		data-txnInfo="TransactionInfo{addAndPaySecurityId='null', currencyCode='INR', walletAmount='null', cardType='', txnAmount='500.0', paymentTypeId='', txnId='20170403111212800110166554803273602', txnStatus='null', responseCode='null', requestType='DEFAULT', mid='scwpay09224240900570', orderId='3019863268', mobileno='9030427464', emailId='null', orderDetails='null', address1='null', address2='null', city='null', state='null', pincode='null', offerMessage='null', autoSignup=false, ssoID='30026574', ssoTokenType='null', ssoToken='6b92ce61-92dd-40a7-8db6-4163ebc04c53', txnMode='null', custID='30026574', currencyID='null', requestID='null', securityID='sidbf34b8f45aa70d6f476e631b8a2d813c', chargeFeeAmountATM=0, chargeFeeAmountBALANCE=0, chargeFeeAmountNetBanking=0, chargeFeeAmountCC=0, chargeFeeAmountDC=0, chargeFeeAmountEMI=0, chargeFeeAmountCOD=0, chargeFeeAmountUPI=0, chargeFeeAmountIMPS=0, chargeFeeAmountBankExpress=0, chargeFeeAmountHybrid=0, website='PaytmMarketPlace', subscriptionFrequency='null', subscriptionFrequencyUnit='null', subscriptionEnableRetry='null', subscriptionGraceDays='null', subscriptionStartDate='null', subscriptionExpiryDate='null', subscriptionServiceID='null', subscriptionAmountType='null', subscriptionPPIOnly='null', subscriptionPaymentMode='null', subscriptionMinAmount='null', subscriptionMaxAmount='null', promoCodeResponse=null, retry=false, promoCodeValid=false, displayMsg='null', previousPaymentMode='null', selectedBank='null', saveStateAgainstPaymentOTP='null', isPaymentOTPRequired=false, maxInvalidAttempts=0, paymentOtpSendCount=0, isZeroRupeesSubscription=false}"
+		data-loginInfo="LoginInfo [loginFlag=true, showLoginSuccess=false, oauthInfo={"ORDERID":"3019863268","MSISDN":"","MID":"scwpay09224240900570","return_url":"https://securegw.paytm.in/theia/oauthResponse","EMAIL":"","ADDRESS1":"","oAuthBaseUrl":"https://accounts.paytm.com","client_id":"paytm-pg-client","wap_client_id":"paytm-pg-client-sso","ADDRESS2":""}, loginMandatory=false, user=OAuthUserInfo [userName=yoganand.bharadwaj, emailId=yoganand.bharadwaj@yahoo.com, mobileNumber=9030427464, userID=30026574, payerUserID=216810000134297178558, payerAccountNumber=20070000001357657557], autoLoginCreate=false, logoutAllowed=false, loginRetryCount=0, loginTheme=null, oAuthInfo={"ORDERID":"3019863268","MSISDN":"","MID":"scwpay09224240900570","return_url":"https://securegw.paytm.in/theia/oauthResponse","EMAIL":"","ADDRESS1":"","oAuthBaseUrl":"https://accounts.paytm.com","client_id":"paytm-pg-client","wap_client_id":"paytm-pg-client-sso","ADDRESS2":""}, oAuthInfoHost=https://accounts.paytm.com, oAuthInfoClientID=paytm-pg-client, oAuthInfoWAPClientID=paytm-pg-client-sso, oAuthInfoReturnURL=https://securegw.paytm.in/theia/oauthResponse]"
+		data-theme=""
+		data-retrycount="0"></div>
+
+
+
+		<div id="other-details" data-jsessionid="" data-save-card-mandatory="false"></div>
+		<div id="txnTransientId" data-value="20170403111212800110166554803273602"></div>
+		
+
+		<!-- Configurations --> 
+
+		<!-- Main Container -->
+                
+		<div class="main-container">
+		
+		<!--Header Start-->
+			<div id="header">
+ 		<div class="container">
+    	<div class="fl">
+    	<div class="" alt="Paytm Payments" title="Paytm Payments"></div>
+    		</div>
+    	<div class="txtHeading fl">
+    	<h3>Select Payment Method</h3>
+		      </div>
+    	
+    	<div class="user-view fr">
+			</div>
+		
+		</div>
+  	
+  	<div class="clear"></div>
+</div><!--Header End-->
+
+		<!--Middle Container Start-->
+		<div class="container" id="overlayBox">
+
+				<!-- <h1 class="otherText">Great, let's get the payment done!</h1>
+			<h1 class="fullWalletDeduct" style = "display:none">Just confirm to pay through Paytm Wallet</h1> -->
+
+				<!-- notifications -->
+				<div class="notification-container">
+					</div>
+				<!-- notifications -->
+				<!------------------- Payment Amount ----------------- -->
+				<div class="clear">
+				<!-- summary card -->
+					<div class="clear rowBox">
+	
+	
+	<ul class="grid  fl" style="overflow:visible;">
+	
+      </li>
+      <li class="clear"></li>
+    </ul>
+    <div id="cart-details" class="fr">
+	
+	<ul class="payment-details mb10">
+		
+		</div>
+<div class="clear"></div><div class="clear"></div>     
+</div><!-- summary card -->
+				 <p class="fr"></p>
+			</div>
+			<div class="clear"></div>
+			
+			
+				
+				<!-- paytm cash card -->
+				<!-- paytm cash card -->
+
+			
+			<!-------------------END  Payment Amount ----------------- -->
+	
+			<!-- Login notification -->
+			<!-- Login notification -->			
+				<!-- Merchant Payment Modes -->
+				<div id="merchant-payment-modes" class="cards-tabs relative">
+						<div class="pt20 relative">
+	<div class="blur-overlay top-overlay"></div>
+	<!-- Cards Controls -->
+	<div class="cards-control relative grey-text" id="leftTab">
+		<ul class="grid">
+			<li class="card active">
+		 
+		<a href="#sc-card">Saved Details</a>
+	</li>
+
+<li class="card ">
+		<a href="#dc-card">Debit Card</a>
+	</li>
+<li class="card ">
+		 
+		<a href="#cc-card">Credit Card</a>
+	</li>
+<li class="card ">
+		 
+		<a href="#nb-card">Net Banking</a>
+	</li>
+<li class="card ">
+		 
+		<a href="#upi-mode">UPI</a>
+	</li>
+</ul>
+		<div class="blur-overlay"></div>
+	</div>
+	<!-- Cards Controls -->
+	
+	<!-- Payment mode cards -->
+	<div class="cards-content">
+		<div class='content sc-cards active' id="sc-card">
+	<!-- <h3> Select from card below</h3> -->
+	<div class="savedCardSection">
+	<form autocomplete="off" name="savecard-form" method="post" class="form-horizontal validated" action="/theia/payment/request/submit?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" id="card">
+		<input type="hidden" name="txnMode" value="CC" />
+		<input type="hidden" name="txnMde" value="SC" />
+		<input type="hidden" name="channelId" value="" />
+		<input type="hidden" name="AUTH_MODE" value="3D" />
+		<input type="hidden" name="savedCardId" id="savedCardId" value=""/>
+		<input type="hidden" name="cvvNumber" id="scCvvBox" value="">
+		<input type="hidden" name="walletAmount" id="walletAmountSC" value="0" />
+		<div class="control-group  card ">
+
+                        <div class="controls">
+                            <div class="input-prepend grid">
+                                <div class="cardHeading">
+	              			<span class="add-on fl">
+	                			<label class="radio cvvRadio">
+	                  				<input type="checkbox" name="cno" class="sc-checkbox checkbox" id="61601045"
+                                           data-firstsixdigits="478679" test="card.count"   checked   />
+	                  				</label>
+	              			</span>
+							<div class="fl ml20">
+	              				<span class="fl mr10 mt6 lt-grey-text bankNM default">SBI</span>
+	              					<input type="hidden" class="cardType" value="DEBIT_CARD"/>
+	              				</div>
+	              			
+	              			 <span class="deleteCard fr" cardId="61601045" id="delete-61601045">
+								<a href="#" class="blue blue-text-2">Remove Card</a>
+							</span>
+                                </div>
+
+                                <div class="sc-number">
+                                    <div class="sc-icon VISA-sc fl"></div>
+                                    <input id="prependedradio-61601045" name="prependedradio"
+                                           class="savedCardLabel clear text-input fl" disabled="disabled" type="text" value="4786 XXXX XXXX 7085"
+                                           style="position: relative; width:100%;">
+
+										<div class="saveCardCvvDiv fr" id="cvvDiv-61601045" style="display:none;">
+                                        <ul class="">
+                                            <li>
+                                                <div class="ml15 mt24 mr10 fl">
+                                                        <input type="password" id="cvv-61601045"
+                                                           class="scCvvInput text-input small-input type-tel"
+                                                           maxlength="4" minlength="3" value=""
+                                                           placeholder="Enter CVV">
+                                                    </div>
+
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="clear"></div>
+                                </div>
+
+
+                        </div>
+                    </div>
+
+                <div class="control-group  card ">
+
+                        <div class="controls">
+                            <div class="input-prepend grid">
+                                <div class="cardHeading">
+	              			<span class="add-on fl">
+	                			<label class="radio cvvRadio">
+	                  				<input type="checkbox" name="cno" class="sc-checkbox checkbox" id="90055410"
+                                           data-firstsixdigits="521108" test="card.count"    />
+	                  				</label>
+	              			</span>
+							<div class="fl ml20">
+	              				<span class="fl mr10 mt6 lt-grey-text bankNM default">SBI</span>
+	              					<input type="hidden" class="cardType" value="DEBIT_CARD"/>
+	              				</div>
+	              			
+	              			 <span class="deleteCard fr" cardId="90055410" id="delete-90055410">
+								<a href="#" class="blue blue-text-2">Remove Card</a>
+							</span>
+                                </div>
+
+                                <div class="sc-number">
+                                    <div class="sc-icon MASTER-sc fl"></div>
+                                    <input id="prependedradio-90055410" name="prependedradio"
+                                           class="savedCardLabel clear text-input fl" disabled="disabled" type="text" value="5211 XXXX XXXX 5941"
+                                           style="position: relative; width:100%;">
+
+										<div class="saveCardCvvDiv fr" id="cvvDiv-90055410" style="display:none;">
+                                        <ul class="">
+                                            <li>
+                                                <div class="ml15 mt24 mr10 fl">
+                                                        <input type="password" id="cvv-90055410"
+                                                           class="scCvvInput text-input small-input type-tel"
+                                                           maxlength="4" minlength="3" value=""
+                                                           placeholder="Enter CVV">
+                                                    </div>
+
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="clear"></div>
+                                </div>
+
+
+                        </div>
+                    </div>
+
+                <div class="control-group  card ">
+
+                        <div class="controls">
+                            <div class="input-prepend grid">
+                                <div class="cardHeading">
+	              			<span class="add-on fl">
+	                			<label class="radio cvvRadio">
+	                  				<input type="checkbox" name="cno" class="sc-checkbox checkbox" id="116134038"
+                                           data-firstsixdigits="504435" test="card.count"    />
+	                  				</label>
+	              			</span>
+							<div class="fl ml20">
+	              				<span class="fl mr10 mt6 lt-grey-text bankNM default">SBI</span>
+	              					<input type="hidden" class="cardType" value="DEBIT_CARD"/>
+	              				</div>
+	              			
+	              			 <span class="deleteCard fr" cardId="116134038" id="delete-116134038">
+								<a href="#" class="blue blue-text-2">Remove Card</a>
+							</span>
+                                </div>
+
+                                <div class="sc-number">
+                                    <div class="sc-icon MAESTRO-sc fl"></div>
+                                    <input id="prependedradio-116134038" name="prependedradio"
+                                           class="savedCardLabel clear text-input fl" disabled="disabled" type="text" value="5044 XXXX XXXX 2456"
+                                           style="position: relative; width:100%;">
+
+										<div class="saveCardCvvDiv fr" id="cvvDiv-116134038" style="display:none;">
+                                        <ul class="">
+                                            <li>
+                                                <div class="ml15 mt24 mr10 fl">
+                                                        <input type="password" id="cvv-116134038"
+                                                           class="scCvvInput text-input small-input type-tel"
+                                                           maxlength="4" minlength="3" value=""
+                                                           placeholder="Enter CVV">
+                                                    </div>
+
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="clear"></div>
+                                </div>
+
+
+                        </div>
+                    </div>
+
+                <div class="clear"></div>
+                <!-- For Icici Debit card Only -->
+                <div id="idebitSavedCard" class="mt10 hide card">
+                        <div class="idebitOption">
+                        <label>
+                        <input type="radio"  class = "pcb checkbox paymentIdebit" name="isIciciIDebit" value="N" checked>
+                         Use 3D Secure PIN or OTP</label>
+                        </div>
+                        <div class="idebitOption"> <label>
+                        <input type="radio"  class = "pcb checkbox paymentIdebit" name="isIciciIDebit" value="Y">
+                         Use ATM</label></div>
+                </div>
+                <!-- For Icici Debit card Only -->
+            
+
+            <div class="action-btns mt20 fl relative" style="margin-left:3%;" id="ccdcCards">
+                <div class="savedCardbtn ">
+                    <input name="submit-btn-" type="submit"
+                           class="gry-btn btn-normal " value="Proceed Securely" id="scSubmit">
+                </div>
+            </div>
+            <div class="clear"></div>
+        </form>
+
+		<form autocomplete="off" name="savecard-form" method="post" class="form-horizontal validated impsForm" action="/theia/payment/request/submit?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" id="card">
+            <input type="hidden" name="txnMode" value="IMPS"/>
+            <input type="hidden" name="txnMde" value="IMPS"/>
+            <input type="hidden" name="channelId" value=""/>
+            <input type="hidden" name="AUTH_MODE" value="OTP"/>
+            <input type="hidden" name="savedCardId" id="savedCardId" value=""/>
+            <input type="hidden" name="cvvNumber" id="scCvvBox" value="">
+            <input type="hidden" name="walletAmount" id="walletAmountSC" value="0"/>
+            <div class="savedCardbtn hide fl mt20 " style="margin-left:3%; width:100%;" id="impsCardButton">
+                <input name="submit-btn-" type="submit"
+                       class="gry-btn btn-normal " value="Proceed Securely" id="scSubmit">
+            </div>
+            <div class="clear"></div>
+
+        </form>
+    </div>
+</div>
+<div class = 'card content ' id = "dc-card">
+	<div class="card-header xsmall grey-text mb10 relative">
+		<div class="fr">
+			<div class="secure lt-grey-text">
+	        	<div class="img img-lock fl" alt="Secure" title="Secure"></div>
+	        	<span><i>Your payment details are secured via<br/>128 Bit encryption by Verisign</i></span>
+	        </div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<form autocomplete="off" name="creditcard-form" method="post" action="/theia/payment/request/submit?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" id="card" class="dc-form validated">
+		<input type="hidden" name="txnMode" value="DC" />
+		<input type="hidden" name="channelId" value="" />
+		<input type="hidden" name="AUTH_MODE" value="3D" />
+		<input type="hidden" name="CARD_TYPE" id="cardType" value="" />
+		<input type="hidden" name="walletAmount" id="walletAmountDC" value="0" />
+		<ul class="grid">
+        	<li class="mb20 card-wrapper">
+            	<label for="cardNumber" class="mb10">ENTER DEBIT CARD NUMBER</label>
+            	<p class="cd">
+            	
+            		<input class="dcCardNumber  d text-input large-input cardInput type-tel" autocomplete="off" name="" id="cn1" type="text" maxlength="23" style="width: 278px" data-type="dc" 
+					value="">
+					<input type="hidden" name="cardNumber" value="" class="required">
+				</p>
+                
+                </li>
+			
+            <li class="fl expiry-wrapper" style="overflow:hidden; clear:both;">
+     	    	<label class="mb10 dcExpMonth dcExpYear" for = "dcExpMonth">EXPIRY DATE</label>
+               	<div class="mb10">
+               		<div class="fl" id = "dcExpMonthWrapper">
+                	<select class="dcExpMonth  combobox required" id="dcExpMonth" name="expiryMonth" style="width: 80px;">
+                		<option value="0">MM</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+               		</select>
+               		</div>
+               		
+               	 	<div class="fl ml10" id = "dcExpYearWrapper">
+               			<select class="dcExpYear  combobox required" id = "dcExpYear" name="expiryYear" style="width: 80px;">
+             				<option value="0">YY</option>
+                           <option value="2017">2017</option>
+							  
+							<option value="2018">2018</option>
+							  
+							<option value="2019">2019</option>
+							  
+							<option value="2020">2020</option>
+							  
+							<option value="2021">2021</option>
+							  
+							<option value="2022">2022</option>
+							  
+							<option value="2023">2023</option>
+							  
+							<option value="2024">2024</option>
+							  
+							<option value="2025">2025</option>
+							  
+							<option value="2026">2026</option>
+							  
+							<option value="2027">2027</option>
+							  
+							<option value="2028">2028</option>
+							  
+							<option value="2029">2029</option>
+							  
+							<option value="2030">2030</option>
+							  
+							<option value="2031">2031</option>
+							  
+							<option value="2032">2032</option>
+							  
+							<option value="2033">2033</option>
+							  
+							<option value="2034">2034</option>
+							  
+							<option value="2035">2035</option>
+							  
+							<option value="2036">2036</option>
+							  
+							<option value="2037">2037</option>
+							  
+							<option value="2038">2038</option>
+							  
+							<option value="2039">2039</option>
+							  
+							<option value="2040">2040</option>
+							  
+							<option value="2041">2041</option>
+							  
+							<option value="2042">2042</option>
+							  
+							<option value="2043">2043</option>
+							  
+							<option value="2044">2044</option>
+							  
+							<option value="2045">2045</option>
+							  
+							<option value="2046">2046</option>
+							  
+							<option value="2047">2047</option>
+							  
+							<option value="2048">2048</option>
+							  
+							<option value="2049">2049</option>
+							  
+							<option value="2050">2050</option>
+							  
+							<option value="2051">2051</option>
+							  
+							<option value="2052">2052</option>
+							  
+							</select>
+               	 </div>
+               	 <div class="clear"></div>
+               </div>
+                </li>
+            
+            <li class="ml10 fl relative" id = "dcCvvWrapper">
+                <div class="cvv-block">
+                	<label for="cvvNumber" class="mb10">CVV</label>
+                	<input type="text" name="" class="f-hide" autocomplete="off">
+                	<input class="dcCvvBox  text-input small-input width40 required type-tel" autocomplete="off" type="password" name="cvvNumber" id="dcCvvBox" maxlength="4">
+                	<div class="clear"></div>
+                	</div>
+                
+                <div class="cvv-clue-box hide">
+	                <div class="dc-cvv-clue ui-cluetip mt10">
+	                	The last 3 digit printed on the signature panel on the back of your debit card.
+	                </div>
+	            </div>
+            </li>
+		</ul>
+		
+		<div class="clear"></div>
+		<div class="clear"></div>
+		<div id = "cardInfo" class="storeCardWrapper">
+			<div class="txt12 opt mt10" id = "maestroOpt" style = "display:none;">If your Maestro Card does not have Expiry Date/CVV, skip these fields</div>
+			<div id = "dcStoreCardWrapper" class = "fl mt20">
+			        <div id="dcSaveCardLabel" class="fl">
+			        	<input type="checkbox"  class = "pcb checkbox" name="storeCardFlag" checked="checked">
+			        </div>
+			        <label for="card1" class="save fl mt8">Save this card for faster checkout</label>
+		         </div>
+	        <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        <div class="mt20">
+        	<div class="btn-submit  fl">
+           		<input name="" type="submit" class="gry-btn fr btn-normal" value="Pay now" id = "dcSubmit">
+           	</div>
+           	<a href="/cancelTransaction?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" class="cancel">Cancel</a>
+        	<div class="clear"></div>
+        </div>
+        
+	</form>
+	</div><div class = 'card content ' id = "cc-card">
+	<div class="card-header xsmall grey-text mb10 relative">
+		<div class="fr">
+			<div class="secure lt-grey-text">
+	        	<div class="img img-lock fl" alt="Secure" title="Secure"></div>
+	        	<span><i>Your payment details are secured via<br/>128 Bit encryption by Verisign</i></span>
+	        </div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<form autocomplete="off" name="creditcard-form" method="post" action="/theia/payment/request/submit?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" id="card" class="cc-form validated">
+		
+		<input type="hidden" name="txnMode" value="CC" />
+		<input type="hidden" name="channelId" value="" />
+		<input type="hidden" name="AUTH_MODE" value="3D" />
+		<input type="hidden" name="CARD_TYPE" id="cardType" value="" />
+		<input type="hidden" name="walletAmount" id="walletAmountCC" value="0" />
+
+		<ul class="grid">
+        	<li class="mb20 card-wrapper">
+            	<label class="mb10" for="cardNumber">ENTER CREDIT CARD NUMBER</label>
+            	<p class="cd">
+            		
+            		<input autocomplete="off" type="text" name="" class="ccCardNumber  text-input large-input c cardInput type-tel" id="cn" size="16" maxlength="19" style="width: 278px" data-type="cc" 
+					value=""> 
+					<input type="hidden" name="cardNumber" value="" class="required">
+				</p>
+                
+                
+				
+				<div class="error error2 promo-code-error hide">
+						
+					</div>
+				
+			</li>
+			
+            <li class="expiry-wrapper" style="overflow:hidden; clear:both;">
+     	    	<label class="mb10 ccExpMonth ccExpYear" for = "ccExpMonth">EXPIRY DATE</label>
+               	<div class="mb10">
+               		<div class="fl" id = "ccExpMonthWrapper">
+	                	<select class="ccExpMonth  combobox required" id="ccExpMonth" name="expiryMonth" style="width: 80px;">
+	                		<option value="0">MM</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+	               		</select>
+               		</div>
+               		
+               		<div class="fl ml10" id = "ccExpYearWrapper">
+               			<select class="ccExpYear  combobox required" id="ccExpYear" name="expiryYear" style="width: 80px;">
+              				<option value="0">YY</option>
+                            
+                            
+							<option value="2017">2017</option>
+							  
+							<option value="2018">2018</option>
+							  
+							<option value="2019">2019</option>
+							  
+							<option value="2020">2020</option>
+							  
+							<option value="2021">2021</option>
+							  
+							<option value="2022">2022</option>
+							  
+							<option value="2023">2023</option>
+							  
+							<option value="2024">2024</option>
+							  
+							<option value="2025">2025</option>
+							  
+							<option value="2026">2026</option>
+							  
+							<option value="2027">2027</option>
+							  
+							<option value="2028">2028</option>
+							  
+							<option value="2029">2029</option>
+							  
+							<option value="2030">2030</option>
+							  
+							<option value="2031">2031</option>
+							  
+							<option value="2032">2032</option>
+							  
+							<option value="2033">2033</option>
+							  
+							<option value="2034">2034</option>
+							  
+							<option value="2035">2035</option>
+							  
+							<option value="2036">2036</option>
+							  
+							<option value="2037">2037</option>
+							  
+							<option value="2038">2038</option>
+							  
+							<option value="2039">2039</option>
+							  
+							<option value="2040">2040</option>
+							  
+							<option value="2041">2041</option>
+							  
+							<option value="2042">2042</option>
+							  
+							<option value="2043">2043</option>
+							  
+							<option value="2044">2044</option>
+							  
+							<option value="2045">2045</option>
+							  
+							<option value="2046">2046</option>
+							  
+							<option value="2047">2047</option>
+							  
+							<option value="2048">2048</option>
+							  
+							<option value="2049">2049</option>
+							  
+							<option value="2050">2050</option>
+							  
+							<option value="2051">2051</option>
+							  
+							<option value="2052">2052</option>
+							  
+							</select>
+               	 </div>
+               	 <div class="clear"></div>
+               </div>
+                </li>
+            
+            <li class="ml10 fl" id = "ccCvvWrapper">
+            	<div class="cvv-block">
+                	<label class="mb10" for="cvvNumber">CVV/SECURITY CODE</label>
+                	<input type="text" name="" class="f-hide" autocomplete="off">
+                	<input class="ccCvvBox  text-input small-input required type-tel" autocomplete="off" type="password" name="cvvNumber" id="ccCvvBox" maxlength="4">
+                	<div class="clear"></div>
+                	</div>
+                <div class="clue-box hide">
+					<div class="cc-cvv-clue default-clue ui-cluetip hide mt10">
+	                	The last 3 digit printed on the signature panel on the back of your credit card.
+	                </div>
+	                <div class="cc-cvv-clue amex-clue ui-cluetip hide mt10">
+	                	Four digits code printed at <br/>top of Amex logo on your card.
+	                </div>
+	            </div>
+            </li>
+		</ul>
+		<div class="storeCardWrapper">
+		<div id = "ccStoreCardWrapper" class="fl mt20">
+	        <div class="fl" id="ccSaveCardLabel">
+	        	<input type="checkbox"  class="pcb checkbox" name="storeCardFlag" checked="checked">
+	        </div>
+	        <label for="card1" class="save fl mt8">Save this card for faster checkout</label>
+	        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="mt20">
+        	<div class="btn-submit  fl">
+	           	<input name="" type="submit" class="gry-btn btn-normal" value="Pay now" id = "ccSubmit">
+	         </div>
+	         <a href="/cancelTransaction?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" class="cancel">Cancel</a>
+	         <div class="clear"></div>
+        </div>
+
+	</form>
+	</div><div class="card content " id="nb-card">
+	<div class="card-header xsmall grey-text mb10 relative">
+		<div class="fr">
+			<div class="secure lt-grey-text">
+	        	<div class="img img-lock fl" alt="Secure" title="Secure"></div>
+	        	<span>
+					<i>Your payment details are secured via
+					<br/>
+					128 Bit encryption by Verisign
+					</i>
+				</span>
+	        </div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<script type="text/javascript">
+		maintainenceNBBank = new Object();
+		lowPerfNBBank = new Object();
+	</script>
+	<form autocomplete="off" name="netbanking-form" method="post" action="/theia/payment/request/submit?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" style="padding: 0px" class="validated">
+		<input type="hidden" name="txnMode" value="NB" />
+		<input type="hidden" name="channelId" value="" />
+	 	<input type="hidden" name="AUTH_MODE" value="USRPWD" />
+	 	<input type="hidden" name="bankCode" id="bankCode">
+	 	<input type="hidden" name="walletAmount" id="walletAmountNB" value="0" />
+	 	<div id="popular-banks-wrapper">
+				<label class="mb10" for="submit-btn">SELECT FROM POPULAR BANKS</label>
+				<ul class="netbanking-panel pt20 pbanks grid banks-panel">
+					<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="HDFC" title="HDFC" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="HDFC"  data-bankid="8565560" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="HDFC" style="background : url(https://staticgw1.paytm.in/1.6/images/web/bank/hdfc.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="ICICI" title="ICICI" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="ICICI"  data-bankid="8565557" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="ICICI" style="background : url(https://staticgw5.paytm.in/1.6/images/web/bank/icici.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="AXIS" title="AXIS" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="AXIS"  data-bankid="8565566" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="AXIS" style="background : url(https://staticgw2.paytm.in/1.6/images/web/bank/axis.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="PNB" title="PNB" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="PNB"  data-bankid="8565588" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="PNB" style="background : url(https://staticgw5.paytm.in/1.6/images/web/bank/pnb.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="NKMB" title="NKMB" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="NKMB"  data-bankid="8565585" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="NKMB" style="background : url(https://staticgw4.paytm.in/1.6/images/web/bank/kotak.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="ANDB" title="ANDB" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="ANDB"  data-bankid="8565565" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="ANDB" style="background : url(https://staticgw3.paytm.in/1.6/images/web/bank/andhra-bank.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						</ul>
+				<div class="clear"></div>
+			</div>
+		
+			<div id="other-banks-wrapper">
+				<label class="mt20 mb10" for="submit-btn">
+					OR SELECT OTHER BANK
+				</label>
+				<div id = "nbWrapper">
+					<select class="nbSelect" id = "nbSelect" data-size="5">
+						<option value = "-1">Select</option>
+						<option value="HDFC"  data-bankid="8565560">HDFC Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="ICICI"  data-bankid="8565557">ICICI Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="AXIS"  data-bankid="8565566">Axis Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="PNB"  data-bankid="8565588">Punjab National Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="NKMB"  data-bankid="8565585">Kotak Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="ANDB"  data-bankid="8565565">Andhra Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="BBK"  data-bankid="8565567">Bank of Bahrain and Kuwait</option>
+								<script type="text/javascript">
+									</script>
+						<option value="BOB"  data-bankid="8565564">Bank of Baroda</option>
+								<script type="text/javascript">
+									</script>
+						<option value="BOI"  data-bankid="8565568">Bank of India</option>
+								<script type="text/javascript">
+									</script>
+						<option value="BOM"  data-bankid="8565569">Bank of Maharashtra</option>
+								<script type="text/javascript">
+									</script>
+						<option value="ALH"  data-bankid="8565576">Allahabad Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CANARA"  data-bankid="8565571">Canara Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CSB"  data-bankid="8565603">Catholic Syrian Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CBI"  data-bankid="8565616">Central Bank of India</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CITIUB"  data-bankid="8565572">City Union Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CORP"  data-bankid="8565573">Corporation Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="COSMOS"  data-bankid="8565628">Cosmos Bank</option>
+								<script type="text/javascript">
+									
+										maintainenceNBBank["COSMOS"] = true;
+									</script>
+						<option value="DEUTS"  data-bankid="8565574">Deutsche Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="DCB"  data-bankid="8565614">Development Credit Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="DENA"  data-bankid="8565705">Dena Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="IDBI"  data-bankid="8565577">IDBI Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="INDB"  data-bankid="8565617">Indian Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="IOB"  data-bankid="8565578">Indian Overseas Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="INDS"  data-bankid="8565580">IndusInd Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="JKB"  data-bankid="8565582">Jammu and Kashmir Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="KTKB"  data-bankid="8565583">Karnataka Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="KVB"  data-bankid="8565584">Karur Vysya Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="LVB"  data-bankid="8565586">Lakhsmi Vilas Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="OBPRF"  data-bankid="8565587">Oriental Bank of Commerce</option>
+								<script type="text/javascript">
+									</script>
+						<option value="PSB"  data-bankid="8565701">Punjab & Sind Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SVB"  data-bankid="8565629">Shamrao Vithal Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="STB"  data-bankid="8565662">Saraswat Co-operative Bank Ltd</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SIB"  data-bankid="8565590">South Indian Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SCB"  data-bankid="8565591">Standard Chartered Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SBJ"  data-bankid="8565611">State Bank of Bikaner and Jaipur</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SBH"  data-bankid="8565592">State Bank of Hyderabad</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SBM"  data-bankid="8565594">State Bank of Mysore</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SBOP"  data-bankid="8565610">State Bank of Patiala</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SBT"  data-bankid="8565595">State Bank of Travancore</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SYNBK"  data-bankid="8565596">Syndicate Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="TNMB"  data-bankid="8565597">Tamilnad Mercantile Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="UNI"  data-bankid="8565598">Union Bank of India</option>
+								<script type="text/javascript">
+									</script>
+						<option value="UBI"  data-bankid="8565602">United Bank of India</option>
+								<script type="text/javascript">
+									</script>
+						<option value="VJYA"  data-bankid="8565600">Vijaya Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="YES"  data-bankid="8565601">Yes Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="UCO"  data-bankid="8565651">UCO Bank</option>
+								<script type="text/javascript">
+									</script>
+						</select>
+				</div>	
+			</div>
+			<div id="warningDiv" class="hide clear">
+				<div id="errorMsg" class="mt10"></div>
+			</div>
+			
+			<div class="mt20">
+				<div class="btn-submit  fl">
+	           		<input name="submit-btn" type="submit" class="blue-btn required btn-normal" value="Pay now" id="#">
+	           	</div>
+	           	<a href="#" class="cancel">Cancel</a>
+	           	<div class="clear"></div>
+	        </div>
+	       
+		</form>
+</div>
+
+<script type = 'text/javascript'>
+	$(document).ready(function(){
+		var bankName = "";
+		preselectedNBBank = bankName || null;
+	});
+</script>
+<div class = 'card content ' id = "upi-mode">
+	<div class="card-header xsmall grey-text mb10 relative">
+		
+		<div class="clear"></div>
+	</div>
+	<form autocomplete="off" name="upi-form" method="post" action="/theia/payment/request/submit?MID=scwpay09224240900570&ORDER_ID=3019863268&route="  id="card" class="upi-form validated">
+		<input type="hidden" name="txnMode" value="UPI" />
+		<input type="hidden" name="channelId" value="" />
+		<input type="hidden" name="AUTH_MODE" value="USRPWD" />
+		<input type="hidden" name="CARD_TYPE" id="cardType" value="" />
+		<input type="hidden" name="walletAmount" value="0" />
+		<ul class="grid">
+        	<li class="mb20 card-wrapper">
+            	<label class="mb10" for="VIRTUAL_PAYMENT_ADDRESS" >Enter your Virtual Payment Address (<span style="font-weight:bold;">VPA</span>)</label>
+            	<p class="cd">           		
+            		<input type="text" name="VIRTUAL_PAYMENT_ADDRESS" class="upiPayMode text-input large-input required " placeholder="yourname@bank"  style="width: 278px; font-size:16px;"  required />
+            	 	<p style="margin-top:10px;"><i style="font-size:12px; line-height:18px;">VPA is a unique payment address that can be linked to a person's bank accounts<br> to make payments.</i></p>
+				</p>
+				
+				<div class="clear"></div>
+                	</li>
+		
+		</ul>
+		
+        <div >
+        	<div class="btn-submit  fl">
+	           	<input name="" type="submit" class="gry-btn btn-normal" value="Pay now" id = "upiSubmit">
+	         </div>
+	         <a href="/cancelTransaction?MID=scwpay09224240900570&ORDER_ID=3019863268&route=" class="cancel">Cancel</a>
+	         <div class="clear"></div>
+        </div>
+        
+        
+
+	</form>
+	</div></div>
+	
+	<div class="clear"></div>
+</div>
+</div>
+				<!-- Merchant Payment Modes -->
+
+				<!-- Add Money Payment Modes -->
+				<!-- Add Money Payment Modes -->
+			
+				<div id="footer-placeholder" class="hide"></div>
+			<!-- Footer Start -->
+			<div id="footer" class="mt50">
+		<div class="img img-partner-logo fr"></div>
+</div><!-- Footer End -->
+		</div>
+		<!--Middle Container End-->
+		
+			<div class="modals-container">
+	<div id="login-modal" class="md-modal md-effect-10" style="margin-top: -280px; margin-left: -220px;">
+		<div class="md-content">
+			<a class="closePop close-modal" href="#"></a>
+			<div id="login-spinner">
+				<img src="https://staticgw1.paytm.in/1.6/images/spinner.gif">
+				<br><br>
+				<span class="medium grey-text">Please wait...</span>
+			</div>
+			<iframe id="login-iframe" src="">
+			</iframe>
+		</div>
+	</div>
+	<div id="delete-confirm-modal" class="md-modal md-effect-10">
+		<div class="md-content">
+			<div class="text medium">
+				Are you sure you want to remove this card?
+				<br><br>
+				<span class="del-card-num">5566XXXXXXXXXX848484</span>
+			</div>
+			<div>
+				<div class="btn-submit fl mt20 ml20 deleteCard">
+	           		<input name="" type="submit" class="gry-btn btn-normal" value="Yes" id="">	          
+	           	</div>
+	           	<div class="buttonCls fl mt8 ml20 close-modal">
+	           		<input name="" type="submit" class="gry-btn btn-normal" value="No" id="">	          
+	           	</div>
+	           	<div class="clear"></div>
+	         </div>
+		</div>
+	</div>
+	<div class="md-overlay"></div>
+</div></div>
+		<!-- Main Container -->
+	<script>
+	
+	        var counterToCheck=10;
+		    var cl= setInterval(function(){
+			 	if(window.RESTART_CHECK_JS || counterToCheck==0){
+			  		clearInterval(cl);
+			 	} else {
+			 		counterToCheck--;
+				 	if(!window.RESTART_CHECK_JS && counterToCheck!=0) {
+	 				// load js again every three seconds
+	 				(function(){ 
+	 				     var f = document.createElement('script'); 
+					     f.type = 'text/javascript'; 
+					     f.async = false; 
+					     
+					     f.src = window.URL_RESTART_CHECK; 
+					     var s = document.getElementsByTagName('script')[0]; 
+					     s.parentNode.insertBefore(f,s); 
+					})();
+				};
+			 }
+			},3000);
+ 			
+		
+	</script>
+	</body>
+</html>
